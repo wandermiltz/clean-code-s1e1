@@ -114,13 +114,13 @@ li {
   font-size: 18px;
 }
 
-.task__btn_delete img {
+.task__icon_delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task__btn_delete img:hover {
+.task__icon_delete:hover {
   transform: rotateZ(0);
 }
 
