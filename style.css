@@ -18,7 +18,7 @@ li {
 /* Header */
 
 .header {
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
   text-align: right;
 }
@@ -40,7 +40,7 @@ li {
 }
 
 .main {
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -65,11 +65,6 @@ li {
   align-items: center;
 }
 
-.task__item {
-  width: 56%;
-  flex-grow: 1;
-}
-
 .task__btn {
   background: none;
   border: 0px;
@@ -89,6 +84,7 @@ li {
   height: 21px;
   margin: 0;
   padding: 0 9px;
+  flex-grow: 1;
   font-size: 18px;
   line-height: 18px;
   background: #FFF;
@@ -106,25 +102,15 @@ li {
   width: 318px;
 }
 
-/* Task list */
-
-li > * {
-  vertical-align: middle;
-}
-
-li > .task__checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
 
-li > label {
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 226px;
-}
-
-li > .task__input {
-  width: 226px;
+.task__label {
+  flex-grow: 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
 }
 
 .task__btn-delete img {
