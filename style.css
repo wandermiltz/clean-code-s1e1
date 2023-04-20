@@ -25,25 +25,6 @@ h2 {
   text-transform: uppercase;
 }
 
-input,
-button {
-  outline: none;
-}
-
-button {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-
-button:hover {
-  color: #3a3A3a;
-}
-
 /* Header */
 
 .header {
@@ -75,38 +56,53 @@ button:hover {
   margin: 0 auto 0;
 }
 
-.task {
+.add-item__wrapper {
+  display: flex;
+  padding-top: 20px;
+}
+
+/* Task */
+
+.task__item {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-/* Section add-task */
-
-.add-task__wrapper {
-  display: flex;
-  padding-top: 20px;
+.task__btn {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  outline: none;
 }
 
-.add-task__input {
-  width: 318px;
+.task__btn:hover {
+  color: #3a3A3a;
 }
 
-input[type="text"] {
+.task__input {
+  height: 21px;
   margin: 0;
+  padding: 0 9px;
   font-size: 18px;
   line-height: 18px;
-  height: 21px;
-  padding: 0 9px;
-  border: 1px solid #dDd;
   background: #FFF;
+  border: 1px solid #dDd;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
   color: #888;
+  outline: none;
 }
 
-input[type="text"]:focus {
+.task__input:focus {
   color: #333;
+}
+
+.task__input-add {
+  width: 318px;
 }
 
 /* Task list */
@@ -123,7 +119,7 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+li > .task__checkbox {
   margin: 0 10px;
 }
 
@@ -134,17 +130,17 @@ li > label {
     width: 226px;
 }
 
-li > input[type="text"] {
+li > .task__input {
   width: 226px;
 }
 
-button.delete img {
+.task__btn-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.task__btn-delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -155,11 +151,11 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li .task__input {
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
+ul li.edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
