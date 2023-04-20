@@ -38,7 +38,7 @@ ul {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+li, h2 {
     list-style:none;
 }
 input,button{
@@ -57,7 +57,7 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
+h2,
 label[for='new-task'] {
     color: #333;
     font-weight: 700;
