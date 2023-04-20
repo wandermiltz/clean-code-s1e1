@@ -25,6 +25,7 @@ var createNewTaskElement = function (taskString) {
   label.className = 'task__item';
 
   // Each element needs appending:
+  listItem.className = "task"
   checkBox.type = "checkbox";
   checkBox.className = "task__checkbox";
   editInput.type = "text";

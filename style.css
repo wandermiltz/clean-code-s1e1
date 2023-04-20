@@ -1,28 +1,18 @@
 /* Basic Style */
-body {
-  background-color: #f8f8f8;
-  color: #333;
-  font-family: Lato, sans-serif;
-}
 
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
-li,
-h2 {
+li {
   list-style: none;
 }
 
-h2 {
+.page {
+  background-color: #f8f8f8;
   color: #333;
-  font-weight: 700;
-  font-size: 15px;
-  border-bottom: 2px solid #333;
-  padding: 30px 0 10px;
-  margin: 0;
-  text-transform: uppercase;
+  font-family: Lato, sans-serif;
 }
 
 /* Header */
@@ -30,7 +20,6 @@ h2 {
 .header {
   width: 500px;
   margin: 0 auto;
-  display: block;
   text-align: right;
 }
 
@@ -51,21 +40,33 @@ h2 {
 }
 
 .main {
-  display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
-.add-item__wrapper {
-  display: flex;
-  padding-top: 20px;
+.section__title {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 /* Task */
 
+.task {
+  display: flex;
+  padding: 20px 0 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .task__item {
   width: 56%;
-  display: inline-block;
   flex-grow: 1;
 }
 
@@ -106,14 +107,6 @@ h2 {
 }
 
 /* Task list */
-li {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 li > * {
   vertical-align: middle;
