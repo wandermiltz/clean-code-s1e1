@@ -25,7 +25,7 @@ var createNewTaskElement = function (taskString) {
   label.className = 'task__label';
 
   // Each element needs appending:
-  listItem.className = "task"
+  listItem.className = "task";
   checkBox.type = "checkbox";
   checkBox.className = "task__checkbox";
   editInput.type = "text";
@@ -78,8 +78,8 @@ var editTask = function () {
     editBtn.innerText = "Save";
   }
   listItem.classList.toggle("task_edit-mode");
-  editInput.classList.toggle("task__input_edit-mode")
-  label.classList.toggle("task__label_edit-mode")
+  editInput.classList.toggle("task__input_edit-mode");
+  label.classList.toggle("task__label_edit-mode");
 };
 
 // Delete task:
@@ -102,7 +102,7 @@ var taskCompleted = function () {
   // Append the task list item to the completed tasks:
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
-  label.classList.toggle("task__label_completed")
+  label.classList.toggle("task__label_completed");
 }
 
 // Mark task as incomplete:
@@ -115,7 +115,7 @@ var taskIncomplete = function () {
   // When the checkbox is unchecked, append the task list item to the incomplete tasks:
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
-  label.classList.toggle("task__label_completed")
+  label.classList.toggle("task__label_completed");
 }
 
 var ajaxRequest = function () {
