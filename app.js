@@ -22,7 +22,7 @@ var createNewTaskElement = function (taskString) {
   var deleteButtonImg = document.createElement("img"); // delete button image
 
   label.innerText = taskString;
-  label.className = 'task__label';
+  label.className = "task__label";
 
   // Each element needs appending:
   listItem.className = "task";
@@ -34,7 +34,7 @@ var createNewTaskElement = function (taskString) {
   editButton.className = "task__btn task__btn_edit";
   deleteButton.className = "task__btn task__btn_delete";
   deleteButtonImg.className = "task__icon_delete";
-  deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
   // Appending:
@@ -63,7 +63,7 @@ var editTask = function () {
   console.log("Change 'edit' to 'save'");
 
   var listItem = this.parentNode;
-  var editInput = listItem.querySelector('.task__input');
+  var editInput = listItem.querySelector(".task__input");
   var label = listItem.querySelector(".task__label");
   var editBtn = listItem.querySelector(".task__btn");
   var containsClass = listItem.classList.contains("task_edit-mode");
