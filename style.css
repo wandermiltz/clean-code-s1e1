@@ -1,18 +1,18 @@
 /* Basic Style */
 
-ul {
+.page {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.list {
   margin: 0;
   padding: 0;
 }
 
 li {
   list-style: none;
-}
-
-.page {
-  background-color: #f8f8f8;
-  color: #333;
-  font-family: Lato, sans-serif;
 }
 
 /* Header */

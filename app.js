@@ -5,12 +5,12 @@
 // Break things down into smaller steps and take each step at a time.
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.getElementById("task-input-add");
-var addButton = document.getElementById("task-btn-add");
-var incompleteTaskHolder = document.getElementById("incomplete-tasks"); // list of incomplete tasks
-var completedTasksHolder = document.getElementById("completed-tasks"); // list of completed tasks
+var taskInput = document.querySelector(".task__input_add");
+var addButton = document.querySelector(".task__btn_add");
+var incompleteTaskHolder = document.querySelector(".list_incomplete"); // list of incomplete tasks
+var completedTasksHolder = document.querySelector(".list_completed"); // list of completed tasks
 
-// New task list item:
+// Create task list:
 var createNewTaskElement = function (taskString) {
 
   var listItem = document.createElement("li"); // list item
@@ -46,6 +46,7 @@ var createNewTaskElement = function (taskString) {
   return listItem;
 }
 
+// Add new task:
 var addTask = function () {
   console.log("Add Task...");
   // Create a new list item with the text from task input:
